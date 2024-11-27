@@ -22,6 +22,11 @@ public class Main {
         StringBuilder wholeWord = new StringBuilder();
 
         while (true) {
+            if (count < 1) {
+                System.out.println("больше нет попыток");
+                break;
+            }
+
             userWord = sc.next();
             char[] array = randomWord.toCharArray();
             if (userWord.length() == 1) {
